@@ -42,3 +42,4 @@ npm run build
 ```sh
 npm run lint
 ```
+Professional portfolio of SangYoon Lee (UI Publisher / PL / PM)
