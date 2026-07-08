@@ -1,5 +1,6 @@
 <script setup>
 import Header from './components/Header.vue'
+import TopButton from './components/TopButton.vue'
 import Home from './pages/Home.vue'
 </script>
 
@@ -7,6 +8,7 @@ import Home from './pages/Home.vue'
   <div class="app">
     <Header />
     <Home />
+    <TopButton />
   </div>
 </template>
 
