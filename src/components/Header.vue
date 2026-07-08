@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <h1 class="logo">
-      <a href="/">SY Portfolio</a>
+      <a href="#">SY Portfolio</a>
     </h1>
 
     <div class="right-menu">
@@ -22,10 +22,18 @@
 
 <style scoped>
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding: 20px 0;
+
+  background: rgba(255, 255, 255, .9);
+  backdrop-filter: blur(12px);
 }
 
 .logo {
@@ -39,44 +47,26 @@
   text-decoration: none;
 }
 
-.nav {
+.right-menu {
   display: flex;
   align-items: center;
+  gap: 22px;
+}
+
+.nav {
+  display: flex;
   gap: 28px;
 }
 
 .nav a {
-  position: relative;
   color: #4b5563;
+  text-decoration: none;
   font-size: 15px;
   font-weight: 500;
-  text-decoration: none;
-  transition: color .25s ease;
 }
 
 .nav a:hover {
   color: #111827;
-}
-
-.nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 0;
-  height: 2px;
-  background: #2563eb;
-  transition: width .25s ease;
-}
-
-.nav a:hover::after {
-  width: 100%;
-}
-
-.right-menu {
-  display: flex;
-  align-items: center;
-  gap: 20px;
 }
 
 .resume-btn {
@@ -85,6 +75,8 @@
   border-radius: 30px;
   color: #111827;
   text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
   transition: .3s;
 }
 
@@ -95,18 +87,20 @@
 
 @media (max-width: 768px) {
   .header {
-    flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+    flex-direction: column;
+  }
+
+  .right-menu {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
   }
 
   .nav {
     flex-wrap: wrap;
     gap: 14px 20px;
-  }
-  .right-menu{
-    flex-direction:column;
-    align-items:flex-start;
   }
 }
 </style>

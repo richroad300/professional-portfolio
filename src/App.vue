@@ -16,7 +16,9 @@ import Home from './pages/Home.vue'
 * {
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .app {
   max-width: 1200px;
   margin: 0 auto;
