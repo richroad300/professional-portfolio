@@ -202,7 +202,7 @@ h1 span {
   }
 
   .btn {
-    width: 100%;
+    max-width: 100%;
   }
 
   .hero__stats {
