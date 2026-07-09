@@ -10,10 +10,32 @@ import Footer from '../components/Footer.vue'
 
 <template>
   <Hero />
-  <About />
+
+  <div class="section-bg">
+    <About />
+  </div>
+
   <Career />
-  <Projects />
+
+  <div class="section-bg">
+    <Projects />
+  </div>
+
   <Skills />
-  <Contact />
+
+  <div class="section-bg">
+    <Contact />
+  </div>
+
   <Footer />
 </template>
+
+<style scoped>
+.section-bg {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+  background: #f9fafb;
+}
+</style>
