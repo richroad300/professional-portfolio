@@ -13,9 +13,7 @@
         <a href="#contact">Contact</a>
       </nav>
 
-      <a href="#" class="resume-btn">
-        Resume
-      </a>
+      <!-- <a href="/resume.pdf" class="resume-btn" target="_blank" rel="noopener noreferrer">Resume</a> -->
     </div>
   </header>
 </template>

@@ -58,7 +58,17 @@
       </article>
 
       <article class="project-card">
-        <div class="thumb">
+				<div class="thumb">
+					<img
+						src="../assets/images/ncc.png"
+						alt="국립암센터 차세대 시스템 화면"
+					/>
+
+					<div class="thumb-hover">
+						<span>View Project</span>
+					</div>
+				</div>
+        <!-- <div class="thumb thumb-coming">
 					<img
 						src="../assets/images/ncc.png"
 						alt="국립암센터 차세대 시스템 화면"
@@ -67,7 +77,7 @@
 					<div class="thumb-hover">
 						<span>Coming Soon</span>
 					</div>
-				</div>
+				</div> -->
         <div class="project-head">
           <span class="category">Medical</span>
           <span class="date">2024.11 - 2025.05</span>
@@ -281,11 +291,21 @@
   border-radius: 18px;
   background: #f3f4f6;
 }
+.thumb-coming {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  font-size: 16px;
+  font-weight: 700;
+}
 
 .thumb img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
   transition: .4s;
 }
 

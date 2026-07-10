@@ -182,38 +182,77 @@
   .hero {
     flex-direction: column;
     align-items: flex-start;
-    gap: 50px;
+    gap: 44px;
     min-height: auto;
-    padding: 60px 0 90px;
+    padding: 48px 0 80px;
   }
 
+  .hero-left,
   .hero-right {
     width: 100%;
   }
 
+  .eyebrow {
+    font-size: 13px;
+    letter-spacing: 2.5px;
+  }
+
+  .hello {
+    margin-top: 24px;
+    font-size: 20px;
+  }
+
   .hero-left h1 {
-    font-size: 52px;
+    margin-top: 10px;
+    font-size: 48px;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
   }
 
   .role {
+    margin-top: 16px;
     font-size: 22px;
+    line-height: 1.4;
   }
 
   .desc {
+    margin-top: 24px;
     font-size: 16px;
+    line-height: 1.8;
+    word-break: keep-all;
   }
 
   .actions {
+    display: flex;
     flex-direction: column;
+    gap: 14px;
     width: 100%;
+    max-width: 420px;
+    margin-top: 34px;
   }
 
   .actions a {
     width: 100%;
+    min-height: 56px;
+    padding: 0 24px;
+    box-sizing: border-box;
   }
 
   .hero-card {
-    padding: 30px;
+    padding: 28px;
+    border-radius: 24px;
+  }
+
+  .hero-item {
+    padding: 20px 0;
+  }
+
+  .hero-item strong {
+    font-size: 26px;
+  }
+
+  .hero-item span {
+    font-size: 14px;
   }
 }
 </style>
